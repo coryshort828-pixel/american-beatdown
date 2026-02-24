@@ -351,7 +351,7 @@ a {
     max-height: 90vw;
     border-radius: 50%;
     object-fit: contain;
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm);
     box-shadow: 0 0 30px rgba(166, 25, 46, 0.4),
         0 0 20px rgba(196, 156, 108, 0.3);
     border: 3px solid var(--color-gold);
