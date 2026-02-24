@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="American Beatdown - Live at the Asheville Mall. A classic, unapologetic American fighting spirit. April 23 & 24, 2026.">
+    <title>American Beatdown: Toughman Boxing Competition</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Black Ops One for the distressed/stencil headline look, Montserrat for clean readability -->
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- GSAP for robust animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <!-- CSS Texture Overlays -->
+    <div class="noise-overlay"></div>
+    <div class="blood-splatter"></div>
+    <div class="vignette"></div>
+
+    <header class="navbar">
+        <div class="nav-content">
+            <div class="nav-brand font-stencil text-gold">AB</div>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">The Fight</a>
+                <a href="#pillars" class="nav-link">Pillars</a>
+                <a href="https://www.ticketsource.com/get-vocal-entertainment-llc" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-red btn-small">Get Tickets</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="hero" class="hero section-dark">
+            <div class="hero-container">
+                <div class="logo-wrapper reveal-up">
+                    <!-- Placeholder for the actual logo image -->
+                    <img src="assets/logo.jpg" alt="American Beatdown Logo" class="official-logo">
+                </div>
+
+                <h1 class="hero-title font-stencil reveal-up delay-1 text-white">BUILT FOR <span class="text-red">THE
+                        FIGHT</span></h1>
+
+                <div class="prize-banner reveal-up delay-1 bg-red text-white font-stencil">
+                    FIGHT FOR UP TO $5,000 CASH !!
+                </div>
+
+                <div class="event-details reveal-up delay-2">
+                    <h2 class="event-date font-stencil text-gold">APRIL 24TH & 25TH, 2026</h2>
+                    <h2 class="event-location font-stencil text-white">LIVE AT THE ASHEVILLE MALL</h2>
+                </div>
+
+                <div class="hero-cta reveal-up delay-3">
+                    <a href="#tickets" class="btn btn-red btn-large">SECURE YOUR SPOT</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- About / Mission Section -->
+        <section id="about" class="about section-texture">
+            <div class="container">
+                <h2 class="section-title font-stencil text-center text-white reveal-scroll">PROVE YOUR <span
+                        class="text-gold">TOUGHNESS</span></h2>
+                <div class="about-content reveal-scroll">
+                    <p class="lead-text font-body text-white">
+                        MALE & FEMALE FIGHTERS WANTED.<br>
+                        MUST BE 18 YEARS OF AGE AND PASS A PHYSICAL TO FIGHT!
+                    </p>
+                    <p class="sub-text font-body">
+                        WANNA FIGHT FOR UP TO $5000? Step into the arena where legends are forged and weakness is left
+                        at the door. "American Beatdown" brings the most intense, unapologetic toughman boxing
+                        experience to Asheville. This isn't just a sport; it's a brutal test of survival and heart.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pillars Section -->
+        <section id="pillars" class="pillars section-dark">
+            <div class="container">
+                <div class="pillars-grid">
+
+                    <div class="pillar-card reveal-scroll">
+                        <div class="pillar-icon text-red">💪</div>
+                        <h3 class="pillar-title font-stencil text-gold">STRENGTH</h3>
+                        <p class="pillar-desc font-body text-white">Uncompromising force and unquestionable durability.
+                            Only the strong survive the beatdown.</p>
+                        <div class="card-distress"></div>
+                    </div>
+
+                    <div class="pillar-card reveal-scroll delay-1">
+                        <div class="pillar-icon text-red">🔥</div>
+                        <h3 class="pillar-title font-stencil text-gold">GRIT</h3>
+                        <p class="pillar-desc font-body text-white">Embracing the struggle and the hard work. We bleed,
+                            we sweat, we conquer.</p>
+                        <div class="card-distress"></div>
+                    </div>
+
+                    <div class="pillar-card reveal-scroll delay-2">
+                        <div class="pillar-icon text-red">✊</div>
+                        <h3 class="pillar-title font-stencil text-gold">AUTHENTICITY</h3>
+                        <p class="pillar-desc font-body text-white">Real, raw, and unfiltered combat. No scripts, no
+                            actors, just pure heart.</p>
+                        <div class="card-distress"></div>
+                    </div>
+
+                    <div class="pillar-card reveal-scroll delay-3">
+                        <div class="pillar-icon text-red">🏆</div>
+                        <h3 class="pillar-title font-stencil text-gold">LEGACY</h3>
+                        <p class="pillar-desc font-body text-white">"ESTABLISHED 2026" signals a new tradition built to
+                            last. Be part of the first chapter.</p>
+                        <div class="card-distress"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA / Ticket Section -->
+        <section id="tickets" class="tickets section-texture-red">
+            <div class="container text-center">
+                <h2 class="section-title font-stencil text-white reveal-scroll">EMBRACE THE <span
+                        class="text-black">GRIND</span></h2>
+                <p class="ticket-desc font-body text-white reveal-scroll delay-1">Witness the raw power live. Tickets
+                    are limited for the inaugural event.</p>
+                <div class="ticket-options reveal-scroll delay-2">
+                    <!-- General Admission -->
+                    <div class="ticket-card">
+                        <h4 class="font-stencil text-black">GENERAL ADMISSION</h4>
+
+                        <div class="pricing-tier">
+                            <div class="tier-title font-stencil text-red">FRIDAY OR SATURDAY</div>
+                            <div class="tier-price font-stencil text-black">$27.00</div>
+                            <div class="tier-fees font-body">($25.00 + $2.00 fee) + tax</div>
+                        </div>
+
+                        <div class="pricing-tier">
+                            <div class="tier-title font-stencil text-red">2-NIGHT VALUEPASS</div>
+                            <div class="tier-price font-stencil text-black">$42.56</div>
+                            <div class="tier-fees font-body">($40.00 + $2.56 fee) + tax</div>
+                        </div>
+
+                        <ul class="ticket-features font-body text-black">
+                            <li>Access to Main Concourse</li>
+                        </ul>
+                        <a href="https://www.ticketsource.com/get-vocal-entertainment-llc" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-black btn-full">BUY GA TICKETS</a>
+                    </div>
+
+                    <!-- VIP Floor Seats -->
+                    <div class="ticket-card premium">
+                        <div class="vip-badge font-stencil bg-gold text-black">HOT SEAT</div>
+                        <h4 class="font-stencil text-gold">VIP FLOOR SEATS</h4>
+
+                        <div class="pricing-tier">
+                            <div class="tier-title font-stencil text-gold">FRIDAY OR SATURDAY</div>
+                            <div class="tier-price font-stencil text-white">$47.74</div>
+                            <div class="tier-fees font-body text-white">($45.00 + $2.74 fee) + tax</div>
+                        </div>
+
+                        <div class="pricing-tier">
+                            <div class="tier-title font-stencil text-gold">2-NIGHT VALUEPASS</div>
+                            <div class="tier-price font-stencil text-white">$84.06</div>
+                            <div class="tier-fees font-body text-white">($80.00 + $4.06 fee) + tax</div>
+                        </div>
+
+                        <ul class="ticket-features font-body text-white">
+                            <li>Premium Floor Seats</li>
+                            <li>Closer to the Action</li>
+                        </ul>
+                        <a href="https://www.ticketsource.com/get-vocal-entertainment-llc" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-gold btn-full">BUY VIP TICKETS</a>
+                    </div>
+
+                    <!-- Platinum Ringside -->
+                    <div class="ticket-card platinum">
+                        <div class="vip-badge font-stencil bg-black text-white">ULTIMATE EXPERIENCE</div>
+                        <h4 class="font-stencil text-black">PLATINUM RINGSIDE</h4>
+
+                        <div class="pricing-tier">
+                            <div class="tier-title font-stencil text-red">FRIDAY OR SATURDAY</div>
+                            <div class="tier-price font-stencil text-black">$78.87</div>
+                            <div class="tier-fees font-body">($75.00 + $3.87 fee) + tax</div>
+                        </div>
+
+                        <div class="pricing-tier">
+                            <div class="tier-title font-stencil text-red">2-NIGHT VALUEPASS</div>
+                            <div class="tier-price font-stencil text-black">$125.55</div>
+                            <div class="tier-fees font-body">($120.00 + $5.55 fee) + tax</div>
+                        </div>
+
+                        <ul class="ticket-features font-body text-black">
+                            <li>Absolute Ringside Seats</li>
+                            <li>Hospitality Room VIP Access</li>
+                        </ul>
+                        <a href="https://www.ticketsource.com/get-vocal-entertainment-llc" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-black btn-full">BUY PLATINUM TICKETS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer bg-black">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2 class="font-stencil text-gold">AMERICAN BEATDOWN</h2>
+                <p class="font-body text-white">EST. 2026</p>
+            </div>
+            <div class="footer-links font-body">
+                <a href="#" class="text-white hover-gold">Fighter Application</a>
+                <a href="#" class="text-white hover-gold">Sponsorships</a>
+                <a href="#" class="text-white hover-gold">Contact</a>
+                <a href="#" class="text-white hover-gold">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom font-body">
+            <p>&copy; 2026 American Beatdown. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+
+</html>
