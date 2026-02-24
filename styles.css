@@ -892,3 +892,159 @@ a {
     padding: 0.8rem;
     font-size: 1rem;
 }
+
+/* ==========================================================================
+   Newsletter / Email Signup
+   ========================================================================== */
+.newsletter-section {
+    background: linear-gradient(rgba(166, 25, 46, 0.95), rgba(0, 0, 0, 0.95));
+    padding: 3rem 1rem;
+    border-top: 2px solid var(--color-black);
+    border-bottom: 2px solid var(--color-black);
+}
+
+.newsletter-form {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.newsletter-form input[type="email"] {
+    flex: 1;
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    border: 2px solid var(--color-black);
+    border-right: none;
+    background: var(--color-white);
+    color: var(--color-black);
+    font-family: var(--font-body);
+}
+
+.newsletter-form input[type="email"]:focus {
+    outline: none;
+    background: #f0f0f0;
+}
+
+.newsletter-form .btn {
+    border-radius: 0;
+    border: 2px solid var(--color-black);
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .newsletter-form {
+        flex-direction: column;
+    }
+    .newsletter-form input[type="email"] {
+        border-right: 2px solid var(--color-black);
+        border-bottom: none;
+    }
+}
+
+/* ==========================================================================
+   Fighter Callout Section
+   ========================================================================== */
+.fighter-callout {
+    background: url("assets/fighter-action.jpg") center/cover no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    padding: 6rem 1rem;
+    text-align: center;
+    border-top: 4px solid var(--color-gold);
+    border-bottom: 4px solid var(--color-gold);
+}
+
+.fighter-callout::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.8);
+}
+
+.fighter-callout .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ==========================================================================
+   FAQ Section
+   ========================================================================== */
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: rgba(17, 17, 17, 0.9);
+    border-left: 4px solid var(--color-red);
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.faq-q {
+    font-family: var(--font-stencil);
+    font-size: 1.2rem;
+    color: var(--color-gold);
+    margin-bottom: 0.5rem;
+}
+
+.faq-a {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-white-dim);
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   Venue & Map Section
+   ========================================================================== */
+.venue-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: stretch;
+    background: var(--color-black-lighter);
+    border: 2px solid #333;
+}
+
+@media (max-width: 768px) {
+    .venue-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.venue-info {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.venue-info h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.venue-info p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.map-wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    filter: invert(90%) hue-rotate(180deg) contrast(100%); /* Make google map dark mode */
+}
