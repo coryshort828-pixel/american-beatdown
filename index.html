@@ -151,7 +151,57 @@
                     </div>
                 </div>
             </div>
-        </section>
+            <!-- Contact Section -->
+            <section id="contact" class="section-dark"
+                style="padding-top: 5rem; padding-bottom: 5rem; border-top: 2px solid var(--color-red);">
+                <div class="container">
+                    <h2 class="section-title font-stencil text-center text-white reveal-scroll">GET IN <span
+                            class="text-red">TOUCH</span></h2>
+                    <div class="form-wrapper reveal-scroll delay-1"
+                        style="max-width: 700px; padding: 2rem; background-color: var(--color-black-light); border: 1px solid #333; margin-top: 2rem;">
+                        <form action="https://formsubmit.co/coryshort828@gmail.com" method="POST" class="fighter-form">
+
+                            <!-- FormSubmit Configuration -->
+                            <input type="hidden" name="_subject"
+                                value="New Website Contact Inquiry - American Beatdown">
+                            <input type="hidden" name="_template" value="table">
+                            <!-- Redirect back to homepage after submission -->
+                            <input type="hidden" name="_next" value="http://american-beatdown.com/#contact">
+
+                            <div class="form-group">
+                                <label for="contact_name">Full Name *</label>
+                                <input type="text" id="contact_name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact_email">Email Address *</label>
+                                <input type="email" id="contact_email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact_subject">Subject *</label>
+                                <select id="contact_subject" name="subject" required>
+                                    <option value="" disabled selected>Select an inquiry type...</option>
+                                    <option value="General Question">General Question</option>
+                                    <option value="Ticket Issues">Ticket Issues</option>
+                                    <option value="Sponsorships">Sponsorships</option>
+                                    <option value="Fighter Application Follow-up">Fighter Application Follow-up</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact_message">Message *</label>
+                                <textarea id="contact_message" name="message" rows="5" required
+                                    style="padding: 0.8rem; background-color: var(--color-black); border: 1px solid #444; color: var(--color-white); font-family: var(--font-body); font-size: 1rem; resize: vertical;"></textarea>
+                            </div>
+
+                            <div class="form-submit" style="margin-top: 1.5rem; text-align: center;">
+                                <button type="submit" class="btn btn-red btn-full">SEND MESSAGE</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
     </main>
 
     <footer class="footer bg-black">
@@ -163,7 +213,7 @@
             <div class="footer-links font-body">
                 <a href="apply.html" class="text-white hover-gold">Fighter Application</a>
                 <a href="sponsor.html" class="text-white hover-gold">Sponsorships</a>
-                <a href="#" class="text-white hover-gold">Contact</a>
+                <a href="#contact" class="text-white hover-gold">Contact</a>
                 <a href="#" class="text-white hover-gold">Privacy Policy</a>
             </div>
         </div>
