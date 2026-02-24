@@ -502,59 +502,7 @@ a {
     padding-left: 1.5rem;
 }
 
-/* ==========================================================================
-   Pillars Section
-   ========================================================================== */
-.pillars-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: var(--space-lg);
-}
 
-.pillar-card {
-    background-color: var(--color-black-light);
-    border: 1px solid #333;
-    padding: 2rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-.pillar-card:hover {
-    transform: translateY(-10px);
-    border-color: var(--color-red);
-}
-
-.pillar-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    filter: drop-shadow(0 0 5px rgba(166, 25, 46, 0.5));
-}
-
-.pillar-title {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    letter-spacing: 1px;
-}
-
-.pillar-desc {
-    color: #ccc;
-    font-size: 0.95rem;
-}
-
-/* Distressed corners for cards */
-.card-distress {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    background: radial-gradient(circle at top right, transparent 80%, rgba(200, 150, 100, 0.1) 100%),
-        radial-gradient(circle at bottom left, transparent 80%, rgba(166, 25, 46, 0.1) 100%);
-}
 
 /* ==========================================================================
    Tickets Section

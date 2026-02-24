@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     scrollElements.forEach((el) => {
         // Automatically determine initial y offset based on element type
-        const yOffset = el.classList.contains('pillar-card') ? 100 : 50;
+        const yOffset = 50;
         
         gsap.fromTo(el, 
             { y: yOffset, opacity: 0, visibility: "visible" },
